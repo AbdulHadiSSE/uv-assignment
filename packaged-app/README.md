@@ -1,8 +1,10 @@
 # My Packaged App
 
 **Author:** Abdul Hadi  
-**PIAIC Registration:** PIAIC123456
+**PIAIC Registration:** PIAIC228505
 
-Simple packaged application that displays my information.
+Packaged application that displays my information.
 
-**Run command:** `uv run -m packaged_app.main`
+## App Output
+
+![App Output](screenshot.jpg)

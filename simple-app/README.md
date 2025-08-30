@@ -1,10 +1,10 @@
-# Simple App
+# My Simple App
 
-This is my simple UV application that demonstrates basic functionality.
+**Author:** Abdul Hadi  
+**PIAIC Registration:** PIAIC228505
 
-## Author
+Simple application that displays my information.
 
-- **Name:** Abdul Hadi
-- **PIAIC Registration:** PIAIC123456
+## App Output
 
-## Features
+![App Output](screenshot.jpg)
