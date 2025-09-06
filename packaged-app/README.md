@@ -1,46 +1,47 @@
-# Packaged App
+# AI Greeting Agent - Packaged App
 
 **Author:** Abdul Hadi  
 **PIAIC Registration:** PIAIC228505
 
-A packaged Python application with console script entry points that displays author information.
-
-## Features
-- Packaged Python application structure
-- Console script entry points
-- UV build system integration
-- Python 3.13+ compatible
-
-## Setup
-
-1. Install dependencies:
-```bash
-uv sync
-```
-
-2. Run the application using console scripts:
-```bash
-uv run main
-# or
-uv run packaged-app
-```
-
-## Console Scripts
-- `main`: Executes the greet function
-- `packaged-app`: Alternative entry point
-
-## Project Structure
-```
-packaged-app/
-├── src/
-│   └── packaged_app/
-│       ├── __init__.py
-│       └── main.py
-├── pyproject.toml
-├── uv.lock
-└── README.md
-```
+Packaged AI greeting agent using OpenAI Agents library with Gemini 2.5 Flash model.
 
 ## App Output
 
 ![App Output](screenshot.jpg)
+
+## Features
+
+- Interactive AI greeting agent
+- Gemini 2.5 Flash model integration
+- Console script entry point
+- Modular package structure
+- Environment-based configuration
+
+## Setup
+
+1. Create `.env` file:
+
+```
+GEMINI_API_KEY=your_api_key_here
+```
+
+2. Install dependencies:
+
+```bash
+uv sync
+```
+
+3. Run using console script:
+
+```bash
+uv run run_agent
+```
+
+## Console Scripts
+
+- `run_agent`: Executes the AI greeting agent
+
+## Dependencies
+
+- openai-agents>=0.2.11
+- python-dotenv

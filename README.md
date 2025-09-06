@@ -1,35 +1,35 @@
-# UV Assignment - PIAIC
+# UV Assignment - AI Greeting Agents
 
 **Author:** Abdul Hadi  
 **PIAIC Registration:** PIAIC228505
 
-This repository contains two Python applications demonstrating UV package management:
+Two AI greeting agent applications using OpenAI Agents library with Gemini 2.5 Flash model.
 
 ## Projects
 
 ### 1. Simple App
-- **Location:** `simple-app/`
-- **Description:** Basic Python application with OpenAI agents dependency
-- **Dependencies:** openai-agents>=0.2.11
-- **Python Version:** >=3.13
+- AI greeting agent with direct execution
+- Uses Gemini 2.5 Flash via OpenAI-compatible API
+- Environment-based configuration
 
 ### 2. Packaged App
-- **Location:** `packaged-app/`
-- **Description:** Packaged Python application with console script entry points
-- **Features:** 
-  - Console script commands: `main` and `packaged-app`
-  - Displays author information and PIAIC registration
-- **Python Version:** >=3.13
+- Same AI agent functionality in packaged format
+- Console script entry point
+- Modular structure
 
 ## Setup
 
-Each project uses UV for dependency management. Navigate to the respective project directory and run:
+1. Create `.env` file in each project:
+```
+GEMINI_API_KEY=your_api_key_here
+```
 
+2. Install dependencies:
 ```bash
 uv sync
 ```
 
-## Running the Applications
+## Running
 
 ### Simple App
 ```bash
@@ -40,25 +40,5 @@ uv run python main.py
 ### Packaged App
 ```bash
 cd packaged-app
-uv run main
-# or
-uv run packaged-app
-```
-
-## Project Structure
-```
-uv-assignment/
-├── simple-app/
-│   ├── main.py
-│   ├── pyproject.toml
-│   ├── uv.lock
-│   └── README.md
-├── packaged-app/
-│   ├── src/packaged_app/
-│   │   ├── __init__.py
-│   │   └── main.py
-│   ├── pyproject.toml
-│   ├── uv.lock
-│   └── README.md
-└── README.md
+uv run run_agent
 ```

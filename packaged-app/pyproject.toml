@@ -7,10 +7,12 @@ authors = [
     { name = "AbdulHadiSSE", email = "abdul.hadi44524@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "openai-agents>=0.2.11",
+]
 
 [project.scripts]
-main = "packaged_app.main:greet"
+run_agent = "packaged_app.main:greeting_agent"
 packaged-app = "packaged_app:main"
 
 [build-system]
